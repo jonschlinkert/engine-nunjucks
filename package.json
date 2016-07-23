@@ -1,7 +1,7 @@
 {
   "name": "engine-nunjucks",
   "description": "More comprehensive consolidate-style engine support for nunjucks. Should work with express, assemble, verb, generate, update, and any other app that follows consolidate conventions.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/jonschlinkert/engine-nunjucks",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/engine-nunjucks",
@@ -31,6 +31,7 @@
   "devDependencies": {
     "assemble": "^0.16.1",
     "gulp-format-md": "^0.1.9",
+    "mocha": "^2.5.3",
     "templates": "^0.24.2"
   },
   "keywords": [
