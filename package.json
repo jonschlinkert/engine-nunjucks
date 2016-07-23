@@ -1,0 +1,65 @@
+{
+  "name": "engine-nunjucks",
+  "description": "More comprehensive consolidate-style engine support for nunjucks. Should work with express, assemble, verb, generate, update, and any other app that follows consolidate conventions.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/engine-nunjucks",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/engine-nunjucks",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/engine-nunjucks/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "load-helpers": "^0.3.1",
+    "mixin-deep": "^1.1.3",
+    "nunjucks": "^2.4.2"
+  },
+  "devDependencies": {
+    "assemble": "^0.16.1",
+    "gulp-format-md": "^0.1.9",
+    "templates": "^0.24.2"
+  },
+  "keywords": [
+    "engine",
+    "nunjucks"
+  ],
+  "verb": {
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "assemble",
+        "verb",
+        "update",
+        "generate"
+      ]
+    },
+    "reflinks": [
+      "handlebars",
+      "nunjucks",
+      "verb",
+      "verb-generate-readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
