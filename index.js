@@ -12,7 +12,7 @@ var cache;
 var defaults = {
   ext: '.html',
   name: 'nunjucks',
-  base: 'templates',
+  base: 'templates/blocks',
   throwOnUndefined: true,
   autoescape: false,
   watch: false
@@ -60,10 +60,11 @@ engine.configure = function(options) {
   engine.options = merge({}, defaults, options);
   var Loader = engine.options.loader;
 
+  var base = engine.options.blocks || engine.options.base;
   if (typeof Loader === 'function') {
     engine.loader = new Loader(engine.options);
   } else if (typeof Loader === 'undefined') {
-    engine.loader = new engine.nunjucks.FileSystemLoader(engine.options.base);
+    engine.loader = new engine.nunjucks.FileSystemLoader(base);
   } else {
     engine.loader = Loader;
   }
